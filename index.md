@@ -3,9 +3,11 @@ layout: page
 title: Home
 ---
 
+I'm a programmer living in New York.
+
 <ul class="posts">
     {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a> 
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
     ({{ post.date | date_to_string}})</li>
       {% endfor %}
 </ul>
