@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>fordhurley.github.io</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="main container">
+      <div class="jumbotron text-center">
+      <h2>Please visit <a href="http://fordhurley.com">fordhurley.com</a>.</h2>
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(window).resize(function(){
+          $('.main').css({
+              position:'absolute',
+              left: ($(window).width() - $('.main').outerWidth())/2,
+              top: ($(window).height() - $('.main').outerHeight())/2
+          });
+        });
+        $(window).resize();
+      });
+    </script>
+  </body>
+</html>
